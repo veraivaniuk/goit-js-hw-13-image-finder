@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  background-color: rgb(232, 223, 233); ;
+ 
+}
+input,
+.btn {
+  margin: 15px;
+  padding-left: 15px;
+  padding-right: 10px;
+  height: 40px;
+
+  border-radius: 20px;
+  border: 1px solid rgb(116, 68, 120);
+  outline: none;
+  font-size: 20px;
+  color: rgb(116, 68, 120);
+  font-family: cursive;
+}
+input {
+  min-width: 400px;
+}
+.btn {
+  min-width: 100px;
+  font-weight: bold;
+  background: white;
+}
+.search-form,
+ .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.labele {
+  margin-right: auto;
+  margin-left: auto;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-top: 40px;
+}
+.photo-card {
+  background-color: rgb(252, 252, 250);
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  box-shadow: 0.2em 0.1em 1em;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.photo-card:hover {
+  transform: scale(1.05);
+}
+.material-icons {
+  margin-right: 10px;
+  color: rgb(116, 68, 120);
+}
+img {
+  width: auto;
+  height: 250px;
+  margin: 5px 5px 10px;
+  display: block;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+  height: 60px;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.stats-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(116, 68, 120);
+
+  font-size: 18px;
+}
+
+.stats-item:hover {
+  color: rgb(81, 48, 84);
+  font-family: cursive;
+}
+
+.button.is-hidden {
+  display: none;
+}
